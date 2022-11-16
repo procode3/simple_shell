@@ -41,7 +41,7 @@ int main(void)
 			perror("Not a valid path\n");
 			continue;
 		}
-		args[0] = strdup(return_cmd);
+		args[0] = strdup(_return_cmd);
 		i = 0;
 		pid = fork();
 		if (pid == 0)
