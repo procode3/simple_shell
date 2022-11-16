@@ -2,8 +2,9 @@
 
 ## Description
 It is a command-line interpreter that provides a command line user interface for Unix-like operating systems. It shall contain the following commands:
-## Command name | It's function
-----------------|--------------
+## Command name & It's function
+Command name | It's function
+-------------|--------------
 1. ls | list files or directories in shell.
 2. cd | it changes directory.
 3. mkdir | creates a directory.
