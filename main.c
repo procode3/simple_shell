@@ -2,16 +2,20 @@
 char **get_args(char *str);
 /**
  * main - takes in mutliple commands
+ * @ac: args counter
+ * @av: pointer to args
+ * @env: environment vairable
  *
  * Return: zero on success, 1 on success
  */
 
-int main(void)
+int main(int ac, char **av, char *env[])
 {
 	char *buffer = NULL, **args, *str = NULL, *tok, *_return_cmd;
 	size_t bufsize = 0;
 	int i = 0, j = 0, len = 0;
 	pid_t pid;
+	(void)ac, (void)env;
 
 	while (1)
 	{
@@ -38,7 +42,7 @@ int main(void)
 		_return_cmd = get_cmd(tok);
 		if (_return_cmd == NULL)
 		{
-			perror("./shell");
+			perror(av[0]);
 			continue;
 		}
 		args[0] = strdup(_return_cmd);
