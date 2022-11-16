@@ -38,7 +38,7 @@ int main(void)
 		_return_cmd = get_cmd(tok);
 		if (_return_cmd == NULL)
 		{
-			perror("Not a valid path\n");
+			perror("./shell");
 			continue;
 		}
 		args[0] = strdup(_return_cmd);
