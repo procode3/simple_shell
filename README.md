@@ -74,8 +74,10 @@ $
  
 ## File Descriptions
 
-* **main.h:**  
-* **list.c:**
+* **main.h:**
+* **_getenv.c:**
+* **main.c:**
+* **get_cmd.c:**
   
 ## Bugs
 No bugs are known
